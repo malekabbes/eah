@@ -1,0 +1,74 @@
+﻿<html>
+
+<head>
+    <link href="bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="bootstrap.min.js"></script>
+    <script src="jq.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+    <title>Edit - Evenements</title>
+    <style>
+        body {
+            background: url(cover.png);
+        }
+    </style>
+</head>
+<!------ Include the above in your HEAD tag ---------->
+
+<body>
+    <div class="container">
+        <h2 style="color:white;"><i class="zmdi zmdi-edit"></i>&nbsp;&nbsp;&nbsp;Mise a jour des Evenements </h2>
+        <table id="myTable" class=" table order-list">
+            <thead>
+                <tr>
+                    <td>Nom d'evenement</td>
+                    <td><i class="zmdi zmdi-calendar-note"></i>&nbsp;Date</td>
+                    <td><i class="zmdi zmdi-pin"></i>&nbsp;Place</td>
+                    <td><i class="zmdi zmdi-collection-image"></i>&nbsp;Affiche (image)</td>
+                    <td>Description</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="col-sm-2">
+                        <input type="text" name="nomevent" class="form-control" />
+                    </td>
+                    <td class="col-sm-2">
+                        <input type="text" name="date" class="form-control" />
+                    </td>
+                    <td class="col-sm-2">
+                        <input type="text" name="place" class="form-control" />
+                    </td>
+                    <td class="col-sm-2">
+                        <input type="file" name="image" class="form-control" />
+                    </td>
+                    <td class="col-sm-2">
+                        <textarea class="form-control" rows="5" id="desc"></textarea>
+                    </td>
+                    <td class="col-sm-2"><a class="deleteRow"></a>
+                        <input type="button" class="ibtnDel btn btn-md btn-danger " value="Supprimer">
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="1" style="text-align: left;">
+                        <input type="button" class="btn btn-lg btn-block " id="addrow" value="Ajouter" />
+                    </td>
+                </tr>
+                <tr>
+                </tr>
+            </tfoot>
+        </table>
+        <hr />
+        <div class="row">
+            <div class="col-sm-2">
+                <input type="button" class="btn btn-lg btn-block " id="confirmer" value="Confirmer" />
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

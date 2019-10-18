@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--ANIMATION BUTTONS loading.io -->
+	<link rel="stylesheet" type="text/css" href="loading-btn/loading.css" />
+	<link rel="stylesheet" type="text/css" href="loading-btn/loading-btn.css" />
+	<!-- MATERIAL DESIGN ICONIC FONT -->
+	<link rel="stylesheet" href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
+	<!-- FONT AWESOME (LOCAL) -->
+	<link href="fa/css/all.css" rel="stylesheet">
+	<!-- BOOTSTRAP (LOCAL) -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- STYLE CSS -->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" href="img/favicon.ico">
+	<script src="js/Jquery.js"></script>
+	<script src="js/form.js"></script>
+
+	<script type='text/javascript'>
+		title = " EAH - Inscription ";
+		position = 0;
+
+		function scrolltitle() {
+			document.title = title.substring(position, title.length) + title.substring(0, position);
+			position++;
+			if (position > title.length) position = 0;
+			titleScroll = window.setTimeout(scrolltitle, 170);
+		}
+		scrolltitle();
+	</script>
+
+	<style>
+		.zmdi {
+			font-size: 1.3rem;
+		}
+
+		input:focus {
+			border-bottom: 1px solid #02E2FF;
+			outline: none;
+		}
+
+		.fa-user-edit {
+			font-size: 25px;
+			color: #02E2FF;
+		}
+		#particles-js {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-image: url("");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% 50%;
+}
+	</style>
+</head>
+
+<body>
+
+	<div id="part" class="wrapper" style="background-image: url('img/cover.png');">
+		<div id="particles-js"></div>
+		<script src='https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js'></script>
+		<script src="js/app.js"></script>
+		<br><br><br><br><br>
+		<div class="inner">
+			<div class="image-holder"><br><br><br>
+				<img class="rotate" src="img/logo.png" alt="">
+			</div>
+			<form action="">
+				<h3><i class="fas fa-user-edit"></i>&nbsp;&nbsp;S'identifier</h3>
+				<h5>MERCI DE REMPLIR LES CHAMPS POUR ACCEDER A VOTRE COMPTE</h5><br>
+
+				<div class="form-wrapper">
+					<input type="text" placeholder="Email" class="form-control">
+					<i class="zmdi zmdi-email"></i>
+				</div>
+				<div class="form-wrapper">
+					<input type="password" placeholder="Mot de passe" class="form-control">
+					<i class="zmdi zmdi-lock"></i>
+				</div>
+
+				<button class="ld-over-full-inverse">Soumettre
+					<i class="zmdi zmdi-arrow-right"></i>
+				</button>
+			</form>
+		</div>
+	</div>
+</body>
+
+</html>
